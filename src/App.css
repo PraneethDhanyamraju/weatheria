@@ -1,38 +1,460 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inp{
+	border:none;
+	outline:none;
+	background:none;
+	border-bottom:2px solid white;
+	width:1000px;
+	margin-right: 20px;
+	color:white;
+	font-size:20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.inp::placeholder {
+	color:white;
+	opacity: 1;
   }
+.inp-weather
+{
+	border:none;
+	outline:none;
+	background:none;
+	border-bottom:2px solid #6a5acd;
+	width:1200px;
+	margin-right: 20px;
+	color:#6a5acd;
+	font-size:20px;
+}
+button{
+	background: none;
+	outline: 0;
+	border-radius: 8px;
+	height: 40px;
+	font-size: 1rem;
+	border:2px solid white;
+	padding:10px;
+	text-align: center;
+	color:white;
+	
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-weather
+{
+	
+
+	border:2px solid #6a5acd; 
+	color: #6a5acd; 
+	
+	cursor:pointer;
+}
+  
+.btn-weather:hover
+{
+	
+
+	border:2px solid white; 
+	background: #6a5acd; 
+	color:white;
+	cursor:pointer;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+button:hover{
+	 
+	color:white;
+	cursor:pointer;
+	border:2px solid #6a5acd
+
+}
+.homepage
+{
+	row-gap: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+body
+{
+	overflow-x: auto;
+	overflow-y: scroll;
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+	
+}
+
+.parameter-icon
+{
+	fill:blue;
+}
+.air-container
+{
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 50px;
+}
+
+
+.desc{
+	font-size: 50px;
+	position: relative;
+	left:15%;
+	top:-20%;
+}
+.image-container
+{
+
+	width:100%;
+	height:500px;
+	font-family: 'Roboto', sans-serif;
+	background:url("https://images.pexels.com/photos/220887/pexels-photo-220887.jpeg?cs=srgb&dl=pexels-nicole-rathmayr-220887.jpg&fm=jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	
+	color:white;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:flex-end;
+	text-align:center;
+	
+	
+
+}
+.place
+{
+	font-size:40px;
+	margin:0;
+		
+}
+.temp
+{
+	font-size:100px;
+	margin:0;
+	
+}
+.list-home
+{
+	border: 2px solid white;
+	font-size: 20px;
+	color:white;
+	width: 1000px;
+	height:auto;
+	text-align: center;
+	padding: 8px;
+	cursor: pointer;
+	margin-top:10px;
+	
+}
+.list-weather
+{
+	margin-top:10px;
+	border:5px solid white; 
+	background: #6a5acd;
+	font-size: 20px;
+	color:white;
+	width: 1000px;
+	height:auto;
+	text-align: center;
+	padding: 8px;
+	cursor: pointer;
+	
+}
+
+
+.hand
+{
+	cursor:pointer;
+}
+.date
+{
+margin:0;
+		
+font-size:40px;
+}
+.time
+{
+margin:0;
+	position: relative;
+font-size:50px;
+}
+.container
+{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+
+ 
+ }
+ .home-container
+ 
+{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  flex-direction:column;
+  font-size:1.25rem;
+  
+	height:100vh;
+	color:white;
+	
+  background-image: url("https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-346529.jpg&fm=jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+ }
+ .text-box
+ {
+	display: flex;
+ }
+.cards
+{
+display:flex;
+column-gap: 40px;
+ margin:50px;
+font-family: 'Roboto', sans-serif;
+font-weight:bold;
+flex-wrap:wrap;
+justify-content: center;
+}
+
+.item-bundle2
+{
+  margin-left:50px;
+}
+.item
+{
+  display:flex;
+
+}
+.text-item
+{
+  margin-left:10px;
+}
+.icon-item
+{
+  display:flex;
+  align-items:center;
+}
+.card
+{
+  display:flex; 
+  height:220px;
+  margin:1px;
+ 
+
+  width:400px;
+ 
+  text-align:center;
+ 
+}
+
+.card-details
+{
+	
+	width:300px;
+
+
+}
+.cont
+{
+	background-image: url("https://images.pexels.com/photos/808465/pexels-photo-808465.jpeg?cs=srgb&dl=pexels-tyler-lastovich-808465.jpg&fm=jpg");
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card-body
+{
+	text-align:center;
+	position: relative;
+	
+}
+.parameter-parent
+{
+	display:flex;
+	flex-direction:column;
+	position:absolute;
+}
+.parameters
+{
+	position:relative;
+	left:400%;
+}
+.carousel
+{
+	display:flex;
+	column-gap:10px;
+	flex-wrap:wrap;
+}
+.alerts-container
+{
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+
+.card-icon-carousel
+{
+  width:40px;
+  
+}
+.inline-text
+{
+  display: inline;
+}
+.parameter-icon
+{
+  width: 50px;
+  height:50px;
+}
+
+.carousel .control-dots .dot {
+  background: red !important;
   }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel .slide img
+{
+	width:50% !important;
+	
+} 
+.card-stack
+{
+	height:450px;
+
 }
+.alerts-container
+{
+	display: flex;
+	flex-wrap:wrap;
+	column-gap:30px;
+	row-gap: 50px;
+}
+.alert
+{
+	width:500px;
+	height:auto;
+	background-color:#6a5acd ;
+	color:white;
+	border-radius: 8px;
+	text-align:center;
+	padding:10px;
+	
+}
+.air-container{
+	justify-items: center;
+}
+body{
+	overflow-x: hidden;
+	
+	
+}
+
+.chart-container
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+	
+}
+.c{
+	width: 1200px;
+}
+
+@media (max-width: 1200px) {
+	.c{
+		width: 1000px;
+	}
+  }
+  @media (max-width: 1400px) {
+	.c{
+		width: 800px;
+	}
+	
+	
+	.inp{
+		width:600px;
+	}
+	.inp-weather{
+		width:700px;
+		font-size:15px;
+
+	}
+	.list-weather{
+		width:600px;
+		font-size:15px;
+		margin-right: 100px;
+	}
+	.list-home{
+		width:600px;
+	}
+
+  }
+  @media (max-width: 850px) {
+	.c{
+		width: 400px;
+	}
+	
+	
+	.inp{
+		width:400px;
+	}
+	.inp-weather{
+		width:400px;
+		font-size:10px;
+	}
+	.list-weather{
+		width:420px;
+		font-size:10px;
+		margin-right:100px;
+	}
+	.list-home{
+		width:420px;
+	}
+	
+  }
+  @media(max-width:600px){
+	.image-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 1px;
+	
+	}
+	.inp{
+		width:320px;
+	}
+	.inp-weather{
+		width:320px;
+		font-size:10px;
+	}
+	.list-weather{
+		width:320px;
+		font-size:10px;
+		margin-right:100px;
+	}
+	.list-home{
+		width:320px;
+	}
+	
+
+
+  }
+  
+  @media (max-width: 500px) {
+	.c{
+		width: 200px;
+	}
+	.place{
+		font-size: 30px;
+	}
+	.alert{
+		width: 300px;
+		height:auto
+	}
+		
+  }
+
+ .heading{
+	color: #6a5acd;
+ }
